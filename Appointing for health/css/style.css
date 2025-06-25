@@ -1,0 +1,138 @@
+:root {
+    --yellow: #ffcc00;       /* Buttons and some text */
+    --light-gray: #f0f0f0;   /* Body background */
+    --dark-gray: #333;       /* Sidebars and headers */
+    --blue: #007bff;         /* Links and some buttons */
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--dark-gray);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    color: var(--yellow);
+}
+
+nav a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container, .form-container, .content {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+button {
+    background-color: var(--yellow);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="radio"] {
+    margin-right: 5px;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: var(--dark-gray);
+    color: white;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f5f5f5;
+}
+
+.doctor-card {
+    background-color: white;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.success-message {
+    color: green;
+    margin-top: 10px;
+    display: none;
+}

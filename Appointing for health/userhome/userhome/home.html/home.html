@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <title>User Home - MediCareBook</title>
+</head>
+<body>
+    <div style="display: flex;">
+        <aside class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">My Appointments</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1 style="color: black;">Book A Doctor</h1>
+            <div class="doctor-card">
+                <h3>Dr. Koushik</h3>
+                <p>Phone: 09176478438</p>
+                <p>Address: Chennai</p>
+                <p>Specialization: ENT</p>
+                <p>Experience: 5 Yrs</p>
+                <p>Fees: 1000</p>
+                <p>Timing: 07:00 - 12:00</p>
+                <button onclick="bookAppointment('Dr. Koushik')">Book Now</button>
+            </div>
+            <div class="doctor-card">
+                <h3>Dr. Karthick</h3>
+                <p>Phone: 09176478438</p>
+                <p>Address: Kerala</p>
+                <p>Specialization: Orthopedics</p>
+                <p>Experience: 10 Yrs</p>
+                <p>Fees: 500</p>
+                <p>Timing: 09:00 - 14:00</p>
+                <button onclick="bookAppointment('Dr. Karthick')">Book Now</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
